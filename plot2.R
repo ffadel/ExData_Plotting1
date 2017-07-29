@@ -5,7 +5,7 @@ url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_co
 filename <- "./household_power_consumption.txt"
 
 # check file if already available
-if(!file.exists(household_data)){
+if(!file.exists(filename)){
   download.file(url,"./dataset.zip")
   unzip("./dataset.zip")
 }
